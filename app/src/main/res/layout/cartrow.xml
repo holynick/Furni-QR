@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comfy Sofa"
+        android:textStyle="bold"
+        android:id="@+id/furniname"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:textSize="25dp"
+        android:gravity=""
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/furniimage" />
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:padding="10dp"
+        android:id="@+id/furniimage"
+        android:src="@drawable/hottestitem"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="5dp"
+        android:id="@+id/checkbox"
+        android:layout_below="@+id/furniname"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Color: Blue"
+        android:id="@+id/color"
+        android:paddingLeft="10dp"
+        android:paddingBottom="5dp"
+        android:textSize="14dp"
+        android:gravity=""
+        android:layout_below="@+id/furniname"
+        android:layout_toEndOf="@+id/furniimage" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Textile: original"
+        android:id="@+id/textile"
+        android:paddingLeft="10dp"
+        android:textSize="14dp"
+        android:gravity=""
+        android:layout_below="@+id/color"
+        android:layout_toEndOf="@+id/furniimage" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RM 25.90"
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        android:textSize="25dp"
+        android:gravity=""
+        android:id="@+id/cost"
+        android:layout_alignBottom="@+id/furniimage"
+        android:layout_toEndOf="@+id/furniimage" />
+
+    <Spinner
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/quantity"
+        android:entries="@array/quantity_arrays"
+        android:layout_alignBaseline="@+id/cost"
+        android:layout_alignBottom="@+id/cost"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ckfyp.furniqr">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainMenuActivity" />
+        <activity android:name=".CatalogActivity" />
+        <activity android:name=".FurniDetailsActivity" />
+        <activity android:name=".CartActivity" />
+        <activity android:name=".PaymentActivity" />
+        <activity android:name=".AssemblyTypeActivity" />
+        <activity android:name=".QrCodeActivity" />
+        <activity android:name=".StaffMainMenuActivity" />
+        <activity android:name=".ScannerActivity" />
+        <activity android:name=".ScannerResultActivity" />
+        <activity android:name=".TaskActivity" />
+        <activity android:name=".TaskDetailsActivity" />
+        <activity android:name=".QrCodeListActivity" />
+        <activity android:name=".QrCodeDetailsActivity"></activity>
+    </application>
+
+</manifest>
